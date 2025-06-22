@@ -7,7 +7,10 @@ import os
 import re
 from datetime import datetime, timedelta, timezone
 from dotenv import load_dotenv
-
+try:
+    from zoneinfo import ZoneInfo
+except ImportError:
+    from backports.zoneinfo import ZoneInfo
 load_dotenv()
 
 VIETNAM_TZ = ZoneInfo("Asia/Ho_Chi_Minh")
