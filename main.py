@@ -10,8 +10,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# --- Cấu hình Timezone Việt Nam (UTC+7) ---
-VIETNAM_TZ = timezone(timedelta(hours=7))
+VIETNAM_TZ = ZoneInfo("Asia/Ho_Chi_Minh")
 
 # --- Bot Setup ---
 intents = discord.Intents.default()
